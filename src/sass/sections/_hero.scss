@@ -1,26 +1,29 @@
 .section-hero {
+  height: 618px;
   padding-top: 20px;
-  padding-bottom: 66px;
-  background-image: url('../images/hero/hero-layer1mobile.png');
   background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+  background-image: url('../images/hero/hero-layer3mobile-min.png'),
+    url('../images/hero/hero-layer2mobile-min.png'),
+    url('../images/hero/hero-layer1mobile.png');
+  background-size: 178px 178px, 208px 148px, cover;
+  background-position: calc(5px + 50%) 344px, calc(0px + 50%) 356px, bottom;
 
   @media screen and (min-width: $breakpoint-tablet) {
+    height: 480px;
     padding-top: 32px;
-    background-image: url('../images/hero/hero-layer1tablet.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
+    background-image: url('../images/hero/hero-layer3tablet-min.png'),
+      url('../images/hero/hero-layer2tablet-min.png'),
+      url('../images/hero/hero-layer1tablet.png');
+  background-size: 321px 321px, 376px 269px, cover;
+  background-position: calc(175px + 50%) 50px, calc(168px + 50%) 67px, bottom;
   }
   @media screen and (min-width: $breakpoint-desktop) {
+    height: 800px;
     padding-top: 104px;
-    padding-bottom: 144px;
     background-image: url('../images/hero/hero-layer3desktop-min.png'),
       url('../images/hero/hero-layer2desktop-min.png'),
       url('../images/hero/hero-layer1desktop.png');
-    background-repeat: no-repeat;
-    background-position: 882px 5px, 801px 46px, bottom;
+    background-position: calc(425px + 50%) 5px, calc(406px + 50%) 42px, bottom;
     background-size: 720px, 842px, auto;
   }
 
