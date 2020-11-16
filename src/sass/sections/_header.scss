@@ -1,0 +1,48 @@
+.section-header {
+    position: fixed;
+    width: 100%;
+}
+
+.section-header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    @media screen and (min-width: $breakpoint-tablet) {
+        padding-top: 40px;
+    }
+    @media screen and (min-width: $breakpoint-desktop) {
+        padding-top: 33px;
+    }
+}
+.logo-icon {
+  width: 80px;
+  height: 30px;
+  @media screen and (min-width: $breakpoint-tablet) {
+      width: 128px;
+      height: 45px;
+  }
+}
+
+nav {
+    display: none;
+    @media screen and (min-width: $breakpoint-tablet) {
+        display: block;
+    }
+}
+.nav-list {
+    display: flex;
+
+}
+
+.menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+.menu-button-icon {
+    width: 20px;
+    height: 20px;
+    fill: #000000;
+}

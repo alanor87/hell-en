@@ -1,6 +1,6 @@
 .section-hero {
   height: 618px;
-  padding-top: 20px;
+  padding-top: 110px;
   background-repeat: no-repeat;
   background-image: url('../images/hero/hero-layer3mobile-min.png'),
     url('../images/hero/hero-layer2mobile-min.png'),
@@ -10,7 +10,7 @@
 
   @media screen and (min-width: $breakpoint-tablet) {
     height: 480px;
-    padding-top: 32px;
+    padding-top: 158px;
     background-image: url('../images/hero/hero-layer3tablet-min.png'),
       url('../images/hero/hero-layer2tablet-min.png'),
       url('../images/hero/hero-layer1tablet.png');
@@ -19,7 +19,7 @@
   }
   @media screen and (min-width: $breakpoint-desktop) {
     height: 800px;
-    padding-top: 104px;
+    padding-top: 150px;
     background-image: url('../images/hero/hero-layer3desktop-min.png'),
       url('../images/hero/hero-layer2desktop-min.png'),
       url('../images/hero/hero-layer1desktop.png');
