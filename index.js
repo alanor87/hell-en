@@ -184,16 +184,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\images\\hero\\hero-layer1mobile.png":[["hero-layer1mobile.7097a272.png","images/hero/hero-layer1mobile.png"],"images/hero/hero-layer1mobile.png"],"./..\\images\\hero\\hero-layer1tablet.png":[["hero-layer1tablet.698c3381.png","images/hero/hero-layer1tablet.png"],"images/hero/hero-layer1tablet.png"],"./..\\images\\hero\\hero-layer1desktop.png":[["hero-layer1desktop.3d2fbded.png","images/hero/hero-layer1desktop.png"],"images/hero/hero-layer1desktop.png"],"./..\\images\\hero\\hero-layer1mobile@2x.png":[["hero-layer1mobile@2x.594a22ea.png","images/hero/hero-layer1mobile@2x.png"],"images/hero/hero-layer1mobile@2x.png"],"./..\\images\\hero\\hero-layer1tablet@2x.png":[["hero-layer1tablet@2x.ed88511b.png","images/hero/hero-layer1tablet@2x.png"],"images/hero/hero-layer1tablet@2x.png"],"./..\\images\\hero\\hero-layer1desktop@2x.png":[["hero-layer1desktop@2x.afb42960.png","images/hero/hero-layer1desktop@2x.png"],"images/hero/hero-layer1desktop@2x.png"],"./..\\images\\problems\\fire-desktop-min.png":[["fire-desktop-min.0f0de6e6.png","images/problems/fire-desktop-min.png"],"images/problems/fire-desktop-min.png"],"./..\\images\\problems\\fire@2x-desktop-min.png":[["fire@2x-desktop-min.72c8ef79.png","images/problems/fire@2x-desktop-min.png"],"images/problems/fire@2x-desktop-min.png"],"./..\\images\\program\\program-mobile-min.png":[["program-mobile-min.dcaec478.png","images/program/program-mobile-min.png"],"images/program/program-mobile-min.png"],"./..\\images\\program\\program@2x-mobile-min.png":[["program@2x-mobile-min.0b02b2e8.png","images/program/program@2x-mobile-min.png"],"images/program/program@2x-mobile-min.png"],"./..\\images\\program\\program-tablet-min.png":[["program-tablet-min.7463b3a5.png","images/program/program-tablet-min.png"],"images/program/program-tablet-min.png"],"./..\\images\\program\\program@2x-tablet-min.png":[["program@2x-tablet-min.f9f305ba.png","images/program/program@2x-tablet-min.png"],"images/program/program@2x-tablet-min.png"],"./..\\images\\program\\program-desktop-min.png":[["program-desktop-min.5f7bbd41.png","images/program/program-desktop-min.png"],"images/program/program-desktop-min.png"],"./..\\images\\program\\program@2x-desktop-min.png":[["program@2x-desktop-min.7b57faf5.png","images/program/program@2x-desktop-min.png"],"images/program/program@2x-desktop-min.png"],"./..\\images\\registration\\registration-mobile-min.png":[["registration-mobile-min.95743693.png","images/registration/registration-mobile-min.png"],"images/registration/registration-mobile-min.png"],"./..\\images\\registration\\registration@2x-mobile-min.png":[["registration@2x-mobile-min.e83b53e7.png","images/registration/registration@2x-mobile-min.png"],"images/registration/registration@2x-mobile-min.png"],"./..\\images\\registration\\registration-tablet-min.png":[["registration-tablet-min.1c2eb733.png","images/registration/registration-tablet-min.png"],"images/registration/registration-tablet-min.png"],"./..\\images\\registration\\registration-desktop-min.png":[["registration-desktop-min.3ca0691d.png","images/registration/registration-desktop-min.png"],"images/registration/registration-desktop-min.png"],"./..\\images\\registration\\registration@2x-desktop-min.png":[["registration@2x-desktop-min.2e1e73e3.png","images/registration/registration@2x-desktop-min.png"],"images/registration/registration@2x-desktop-min.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-"use strict";
-
-require("./sass/main.scss");
-},{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -397,5 +388,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/index.js.map
