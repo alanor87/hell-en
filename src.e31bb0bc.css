@@ -3,10 +3,6 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-:root {
-  --white-logo-fill: #ffffff;
-}
-
 /* Main background colors */
 /* Accent color for all elements */
 /* Font colors */
@@ -36,7 +32,7 @@ body {
     padding-top: 160px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   body {
     padding-top: 230px;
   }
@@ -76,9 +72,9 @@ button {
     max-width: 688px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .container {
-    max-width: 1344px;
+    max-width: 1314px;
   }
 }
 
@@ -96,7 +92,7 @@ button {
   text-transform: uppercase;
   background-color: #ff6b09;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .button {
     padding: 26px 0;
     font-size: 14px;
@@ -111,7 +107,7 @@ button {
   line-height: 130%;
   letter-spacing: 0.03em;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-title {
     font-weight: 800;
     font-size: 46px;
@@ -133,7 +129,7 @@ button {
     width: 688px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .subsection {
     left: calc(50% - 657px);
     width: 1314px;
@@ -168,10 +164,6 @@ button {
   }
 }
 @media screen and (min-width: 480px) {
-  .container {
-    margin: 0 auto;
-  }
-
   .advantages-list-item {
     display: flex;
     justify-content: start;
@@ -201,10 +193,6 @@ button {
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
-    margin: 0 auto;
-  }
-
   .advantages-list-item {
     display: flex;
     align-items: center;
@@ -278,7 +266,7 @@ button {
     padding: 40px 0;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-footer .container {
     padding: 0 15px;
   }
@@ -297,25 +285,24 @@ button {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .footer-wrapper {
     height: 150px;
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .logo {
     position: absolute;
     bottom: 23px;
   }
 }
-.logo-dark-img {
+.logo-dark {
   width: 84px;
   height: 30px;
-  /* background-image: url(../images/logo-social/logo-min.png); */
 }
 @media screen and (min-width: 768px) {
-  .logo-dark-img {
+  .logo-dark {
     width: 128px;
     height: 45px;
   }
@@ -332,7 +319,7 @@ button {
     flex-direction: row;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .contact-wrapper {
     margin: 0 auto;
   }
@@ -360,7 +347,7 @@ button {
     height: 24px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .contact-phone-icon {
     width: 29px;
     height: 29px;
@@ -380,7 +367,7 @@ button {
     font-size: 20px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .contact-phone {
     margin: 0;
     font-size: 30px;
@@ -394,10 +381,9 @@ button {
     height: 40px;
     margin-right: 24px;
     margin-left: 24px;
-    background-image: url(/vertical-line.f5cc6551.svg);
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .vertical-line {
     margin-left: 16px;
   }
@@ -406,7 +392,8 @@ button {
 .instagram {
   width: 40px;
   height: 40px;
-  background-image: url(/instagram-min.e6f1cdda.png);
+  background-image: url(/instagram.244b4cdf.svg);
+  background-size: contain;
 }
 
 .section-copyright {
@@ -437,7 +424,7 @@ button {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-guarantee {
     padding-top: 130px;
     padding-bottom: 130px;
@@ -455,7 +442,7 @@ button {
     max-width: 688px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-guarantee .container {
     max-width: 1344px;
   }
@@ -478,7 +465,7 @@ button {
     padding: 30px 50px 30px 80px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .guarantee-list {
     padding: 50px 112px 45px 112px;
     margin-top: 50px;
@@ -500,7 +487,7 @@ button {
   line-height: 1.67;
   color: #3d3d3d;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .guarantee-paragraph {
     font-size: 20px;
     line-height: 1.4;
@@ -518,7 +505,7 @@ button {
     margin-right: 25px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .guarantee-icon {
     width: 18px;
   }
@@ -545,7 +532,7 @@ button {
     height: 35px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .guarantee-wrap-before:before {
     height: 45px;
     bottom: -15px;
@@ -568,7 +555,7 @@ button {
     padding-bottom: 40px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-header {
     padding-top: 34px;
     padding-bottom: 34px;
@@ -595,7 +582,7 @@ button {
 .nav {
   display: none;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .nav {
     display: block;
   }
@@ -639,7 +626,7 @@ button {
     color: #ffffff;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .button.contact {
     margin-left: 0;
     margin-right: 0;
@@ -655,7 +642,7 @@ button {
   background-color: transparent;
   border: none;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .menu-btn {
     display: none;
   }
@@ -682,7 +669,7 @@ button {
     background-size: cover;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-hero {
     background-image: url("/hero-layer1desktop.3d2fbded.png");
     background-repeat: no-repeat;
@@ -700,7 +687,7 @@ button {
     background-image: url("/hero-layer1tablet@2x.ed88511b.png");
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1320px), screen and (min-resolution: 192dpi) and (min-width: 1320px), screen and (min-resolution: 2dppx) and (min-width: 1320px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1340px), screen and (min-resolution: 192dpi) and (min-width: 1340px), screen and (min-resolution: 2dppx) and (min-width: 1340px) {
   .section-hero {
     background-image: url("/hero-layer1desktop@2x.afb42960.png");
   }
@@ -746,7 +733,7 @@ button {
     width: 332px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .hero-title {
     font-size: 58px;
     margin-bottom: 24px;
@@ -761,7 +748,7 @@ button {
   letter-spacing: 0.08em;
   color: #B9B9B9;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .hero-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -777,7 +764,7 @@ button {
   letter-spacing: 0.08em;
   color: #111518;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .hero-description {
     font-size: 20px;
     line-height: 164.9%;
@@ -793,7 +780,7 @@ button {
   letter-spacing: 0.08em;
   color: #ff6b09;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .hero-accent {
     font-size: 20px;
     line-height: 164.9%;
@@ -805,7 +792,7 @@ button {
   padding-right: 6px;
   padding-left: 6px;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .hero-button {
     min-width: 354px;
     padding-left: 0;
@@ -827,7 +814,7 @@ button {
     width: 332px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .hero-wrapper {
     width: 536px;
     margin-bottom: 40px;
@@ -847,7 +834,7 @@ button {
     padding-top: 30px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .hero-images {
     width: 842px;
     height: 718px;
@@ -867,14 +854,14 @@ button {
     top: 10px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .layer1 {
     top: -40px;
     left: 80px;
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .hero-description-accent {
     display: inline-flex;
   }
@@ -884,7 +871,7 @@ button {
   padding-top: 198px;
   padding-bottom: 50px;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-how {
     padding-top: 278px;
     padding-bottom: 130px;
@@ -899,7 +886,7 @@ button {
     padding: 0 15px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-how .container {
     max-width: 1315px;
     padding: 0;
@@ -909,7 +896,7 @@ button {
   margin-bottom: 30px;
   text-align: center;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-how .section-title {
     margin-bottom: 50px;
     text-align: left;
@@ -942,7 +929,7 @@ button {
     padding: 40px 26px 50px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .how-list-item {
     width: 425px;
     padding: 30px 27px 50px;
@@ -968,12 +955,12 @@ button {
     margin-bottom: 27px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .how-list-item:not(:nth-last-child(-n+2)) {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .how-list-item:not(:nth-last-child(-n+3)) {
     margin-bottom: 27px;
   }
@@ -992,7 +979,7 @@ button {
     margin-bottom: 10px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .how-list-item-title {
     font-size: 20px;
     line-height: 1.4;
@@ -1012,7 +999,7 @@ button {
   letter-spacing: 0.08em;
   color: #B9B9B9;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .how-list-item-text {
     font-size: 18px;
     line-height: 1.56;
@@ -1037,7 +1024,7 @@ button {
     margin-bottom: 10px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .how-symbol {
     margin-bottom: 0;
   }
@@ -1080,7 +1067,7 @@ button {
     padding-top: 60px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-problems {
     height: 560px;
     padding-top: 100px;
@@ -1090,7 +1077,7 @@ button {
     background-size: 455px 472px;
   }
 }
-@media screen and (min-width: 1320px) and (min-device-pixel-ratio: 2), screen and (min-width: 1320px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1320px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1320px) and (min-resolution: 192dpi), screen and (min-width: 1320px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1340px) and (min-device-pixel-ratio: 2), screen and (min-width: 1340px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1340px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1340px) and (min-resolution: 192dpi), screen and (min-width: 1340px) and (min-resolution: 2dppx) {
   .section-problems {
     background-image: url("/fire@2x-desktop-min.72c8ef79.png");
   }
@@ -1109,7 +1096,7 @@ button {
     bottom: -152px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-problems .subsection {
     bottom: -141px;
   }
@@ -1129,7 +1116,7 @@ button {
     margin-bottom: 25px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-problems .section-title {
     font-size: 46px;
     width: 866px;
@@ -1157,7 +1144,7 @@ button {
     padding: 23px 0px 33px 0px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .problems-list {
     padding: 70px 0px 62px 0px;
   }
@@ -1178,7 +1165,7 @@ button {
     margin-bottom: 0px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .problems-item {
     width: 25%;
     margin-right: 40px;
@@ -1197,7 +1184,7 @@ button {
     margin-bottom: 8px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .item-first {
     margin-bottom: 64px;
   }
@@ -1213,7 +1200,7 @@ button {
   letter-spacing: 0.08em;
   margin-bottom: 5px;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .problems-number {
     line-height: 1.695;
     font-size: 20px;
@@ -1226,7 +1213,7 @@ button {
   line-height: 1.2px;
   letter-spacing: 0.08em;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .dash {
     line-height: 1.649px;
   }
@@ -1238,7 +1225,7 @@ button {
   line-height: 1.785;
   letter-spacing: 0.08em;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .problems-name {
     font-size: 20px;
     line-height: 1.4;
@@ -1248,19 +1235,19 @@ button {
 .first-name {
   line-height: 2.3;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .first-name {
     line-height: 1.2;
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .fourth-name {
     line-height: 1.2;
   }
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1340px) {
   .hyphenation {
     max-width: 200px;
   }
@@ -1293,7 +1280,7 @@ button {
     background-image: url("/program@2x-tablet-min.f9f305ba.png");
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-program {
     height: 1305px;
     padding-top: 120px;
@@ -1302,7 +1289,7 @@ button {
     background-position: calc(-496px + 50%) 755px;
   }
 }
-@media screen and (min-width: 1320px) and (min-device-pixel-ratio: 2), screen and (min-width: 1320px) and (min-resolution: 192dpi), screen and (min-width: 1320px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1340px) and (min-device-pixel-ratio: 2), screen and (min-width: 1340px) and (min-resolution: 192dpi), screen and (min-width: 1340px) and (min-resolution: 2dppx) {
   .section-program {
     background-image: url("/program@2x-desktop-min.7b57faf5.png");
   }
@@ -1311,7 +1298,7 @@ button {
 .section-program::before {
   display: none;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-program::before {
     content: "";
     position: absolute;
@@ -1335,7 +1322,7 @@ button {
     margin-bottom: 52px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-program .section-title {
     font-size: 46px;
     margin-bottom: 160px;
@@ -1356,7 +1343,7 @@ button {
     margin: auto;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .program-list {
     width: auto;
     flex-direction: row;
@@ -1381,7 +1368,7 @@ button {
     height: 717px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .program-list::before {
     display: none;
   }
@@ -1390,7 +1377,7 @@ button {
 .program-list-item {
   position: relative;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .program-list-item {
     width: calc(20% - 24px);
   }
@@ -1412,7 +1399,7 @@ button {
     left: -56px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .program-list-item::before {
     height: 16px;
     width: 16px;
@@ -1439,7 +1426,7 @@ button {
   text-transform: uppercase;
   color: #ffffff;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .semester {
     font-size: 20px;
     margin-bottom: 25px;
@@ -1458,7 +1445,7 @@ button {
     flex-direction: row;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .semester-program {
     flex-direction: column;
   }
@@ -1475,7 +1462,7 @@ button {
     margin-right: 50px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .semester-topic-list {
     width: auto;
   }
@@ -1489,7 +1476,7 @@ button {
   letter-spacing: 0.08em;
   color: #ff6b09;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .semester-topic p {
     font-size: 20px;
     margin-bottom: 10px;
@@ -1504,7 +1491,7 @@ button {
   letter-spacing: 0.08em;
   opacity: 0.5;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .semester-topic-item {
     font-size: 18px;
     line-height: 28px;
@@ -1519,7 +1506,7 @@ button {
     bottom: -230px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-program .subsection {
     bottom: -200px;
   }
@@ -1539,7 +1526,7 @@ button {
     letter-spacing: 0.03em;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .subsection .section-title {
     display: none;
   }
@@ -1563,7 +1550,7 @@ button {
     padding-top: 30px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .why-list {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -1579,7 +1566,7 @@ button {
     margin-right: 20px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .why-item {
     width: 27%;
   }
@@ -1593,7 +1580,7 @@ button {
     margin-bottom: 0px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .why-item:not(:last-child):nth-last-child(-n+3) {
     margin-bottom: 0px;
   }
@@ -1610,7 +1597,7 @@ button {
   line-height: 1.649;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .why-number {
     font-size: 20px;
   }
@@ -1623,7 +1610,7 @@ button {
   line-height: 1.428;
   letter-spacing: 0.08em;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .why-reason {
     font-size: 20px;
   }
@@ -1654,12 +1641,12 @@ button {
     background-image: url(/registration@2x-mobile-min.e83b53e7.png);
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-registration {
     background-image: url(/registration-desktop-min.3ca0691d.png);
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1320px), screen and (min-resolution: 192dpi) and (min-width: 1320px), screen and (min-resolution: 2dppx) and (min-width: 1320px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1340px), screen and (min-resolution: 192dpi) and (min-width: 1340px), screen and (min-resolution: 2dppx) and (min-width: 1340px) {
   .section-registration {
     background-image: url(/registration@2x-desktop-min.2e1e73e3.png);
   }
@@ -1669,7 +1656,7 @@ button {
     padding-bottom: 71px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-registration {
     padding-top: 100px;
     padding-bottom: 62px;
@@ -1697,7 +1684,7 @@ button {
     margin-bottom: 40px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .registration-title {
     width: 1100px;
     margin-bottom: 50px;
@@ -1717,7 +1704,7 @@ button {
     line-height: 1.214;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .registration-description {
     font-size: 30px;
     line-height: 1.233;
@@ -1731,7 +1718,7 @@ button {
     margin-bottom: 40px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .registration-description-bottom {
     margin-bottom: 56px;
   }
@@ -1745,7 +1732,7 @@ button {
     margin-bottom: 31px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .registration-form-list {
     margin-bottom: 80px;
   }
@@ -1784,7 +1771,7 @@ button {
     min-width: 390px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .registration-form-input {
     min-width: 478px;
     font-size: 20px;
@@ -1807,7 +1794,7 @@ button {
     padding-top: 302px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-teacher {
     height: 1233px;
     padding-top: 329px;
@@ -1830,7 +1817,7 @@ button {
     color: #111518;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-teacher-title {
     font-weight: 800;
     font-size: 46px;
@@ -1856,7 +1843,7 @@ button {
     color: #111518;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-teacher-name {
     font-weight: 800;
     font-size: 30px;
@@ -1876,7 +1863,7 @@ button {
     padding-bottom: 38px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-teacher-achievement {
     padding-top: 30px;
     padding-bottom: 63px;
@@ -1891,7 +1878,7 @@ button {
   position: relative;
   left: 25px;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-teacher-achievement-list {
     font-weight: 600;
     font-size: 16px;
@@ -1909,7 +1896,7 @@ button {
   color: #B9B9B9;
   padding-bottom: 15px;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-teacher-about-list {
     font-style: normal;
     font-weight: 500;
@@ -1925,7 +1912,7 @@ button {
   color: #ff6b09;
   text-decoration: underline;
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-teacher-achievement-link {
     font-style: normal;
     font-weight: 500;
@@ -1942,7 +1929,7 @@ button {
     height: 516px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-teacher-about-container {
     height: 642px;
     width: 660px;
@@ -1953,7 +1940,7 @@ button {
     margin-right: 40px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-teacher-img {
     margin-right: 30px;
   }
@@ -1968,7 +1955,7 @@ button {
     display: flex;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .section-teacher-flex {
     display: flex;
   }
@@ -1995,7 +1982,7 @@ button {
     padding-top: 40px;
   }
 }
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: 1340px) {
   .backdrop {
     display: none;
   }
