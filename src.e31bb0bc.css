@@ -3,11 +3,21 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+:root {
+  --white-logo-fill: #ffffff;
+}
+
 /* Main background colors */
 /* Accent color for all elements */
 /* Font colors */
 /* Main font */
 /* Breakpoints */
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -49,6 +59,10 @@ h1,
 h2,
 h3 {
   margin: 0;
+}
+
+button {
+  outline: none;
 }
 
 .container {
@@ -253,12 +267,170 @@ h3 {
   color: #111518;
 }
 
-.footer-contact-tel {
+.section-footer .container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .section-footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .section-footer .container {
+    padding: 0 15px;
+  }
+}
+
+.footer-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .footer-wrapper {
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .logo {
+    position: absolute;
+    bottom: 23px;
+  }
+}
+.logo-dark-img {
+  width: 84px;
+  height: 30px;
+  /* background-image: url(../images/logo-social/logo-min.png); */
+}
+@media screen and (min-width: 768px) {
+  .logo-dark-img {
+    width: 128px;
+    height: 45px;
+  }
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+@media screen and (min-width: 768px) {
+  .contact-wrapper {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .contact-wrapper {
+    margin: 0 auto;
+  }
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    margin: 0;
+  }
+}
+.contact-phone-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .contact-phone-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .contact-phone-icon {
+    width: 29px;
+    height: 29px;
+    margin-right: 15px;
+  }
+}
+.contact-phone {
   font-weight: 600;
-  font-size: 30px;
-  line-height: 1.233;
+  font-size: 14px;
+  line-height: 1.2;
   letter-spacing: 0.08em;
   color: #111518;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .contact-phone {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .contact-phone {
+    margin: 0;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .vertical-line {
+    margin: 0 24px;
+    width: 2px;
+    height: 40px;
+    margin-right: 24px;
+    margin-left: 24px;
+    background-image: url(/vertical-line.f5cc6551.svg);
+  }
+}
+@media screen and (min-width: 1320px) {
+  .vertical-line {
+    margin-left: 16px;
+  }
+}
+
+.instagram {
+  width: 40px;
+  height: 40px;
+  background-image: url(/instagram-min.e6f1cdda.png);
+}
+
+.section-copyright {
+  height: 70px;
+  background-color: #111518;
+}
+.section-copyright .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.copyright-text {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+  color: #B9B9B9;
+}
+@media screen and (max-width: 767px) {
+  .copyright-text {
+    text-align: center;
+  }
 }
 
 .section-guarantee {
@@ -404,6 +576,7 @@ h3 {
 }
 .section-header .container {
   display: flex;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -446,11 +619,11 @@ h3 {
   color: #ff6b09;
 }
 
-.section-header .button {
+.button.contact {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .section-header .button {
+  .button.contact {
     display: block;
     margin-left: auto;
     margin-right: 40px;
@@ -461,21 +634,24 @@ h3 {
     padding-left: 12px;
     padding-right: 12px;
   }
-  .section-header .button:hover, .section-header .button:focus {
+  .button.contact:hover, .button.contact:focus {
     background-color: #ff6b09;
     color: #ffffff;
   }
 }
 @media screen and (min-width: 1320px) {
-  .section-header .button {
+  .button.contact {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
 .menu-btn {
+  display: flex;
+  justify-content: cenlter;
+  align-items: center;
   width: 21px;
-  height: 12px;
+  height: 21px;
   background-color: transparent;
   border: none;
 }
@@ -487,8 +663,8 @@ h3 {
 
 .menu-icon {
   width: 21px;
-  height: 12px;
-  fill: black;
+  height: 21px;
+  stroke: black;
 }
 
 .section-hero {
@@ -1801,6 +1977,92 @@ h3 {
 .section-teacher-border {
   height: 52px;
   border-bottom: 1px solid #B9B9B9;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  background-color: rgba(17, 21, 24, 0.9);
+  overflow-y: auto;
+  z-index: 100;
+}
+@media screen and (min-width: 768px) {
+  .backdrop {
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .backdrop {
+    display: none;
+  }
+}
+
+.backdrop .container {
+  padding-bottom: 15px;
+}
+
+.logo-button-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.logo-button-modal .icon-logo {
+  --color1: #ffffff;
+}
+
+.modal-nav-list {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .modal-nav-list {
+    width: 322px;
+    margin: auto;
+  }
+}
+
+.modal-nav-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.modal-nav-link {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #ffffff;
+}
+.modal-nav-link:hover, .modal-nav-link:focus {
+  color: #ff6b09;
+}
+
+.contact-modal {
+  margin: 0 auto;
+  background-color: transparent;
+  color: #ff6b09;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+}
+.contact-modal:hover, .contact-modal:focus {
+  background-color: #ff6b09;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .contact-modal {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
