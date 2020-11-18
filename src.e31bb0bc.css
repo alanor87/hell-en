@@ -62,7 +62,7 @@ button {
 }
 
 .container {
-  max-width: 280px;
+  max-width: 310px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -149,11 +149,13 @@ button {
     margin-bottom: 30px;
   }
 
-  .advantages-list {
-    width: 216px;
-    height: 240px;
+  .container-advantages {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  .advantages-list {
+    width: 216px;
   }
 
   .advantages-list-item {
@@ -162,6 +164,11 @@ button {
     width: 216px;
     height: 60px;
   }
+
+  .advantages-content {
+    font-size: 14px;
+    line-height: 1.429;
+  }
 }
 @media screen and (min-width: 480px) {
   .advantages-list-item {
@@ -169,22 +176,20 @@ button {
     justify-content: start;
   }
 
-  .advantages-content {
-    font-size: 14px;
-    line-height: 1.429;
-  }
-
   .advantages-icon {
     margin-right: 10px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1319px) {
+  .container-advantages {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .advantages-list {
     display: flex;
     width: 688px;
     height: 60px;
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
 
   .advantages-content {
@@ -198,11 +203,6 @@ button {
     align-items: center;
   }
 
-  .advantages-content {
-    font-size: 14px;
-    line-height: 1.429;
-  }
-
   .advantages-icon {
     margin-right: 10px;
   }
@@ -212,29 +212,31 @@ button {
   }
 }
 @media screen and (min-width: 1320px) {
-  .container {
-    width: 1320px;
-    margin: 0 auto;
+  .container-advantages {
+    padding-top: 107px;
+    padding-bottom: 130px;
   }
 
   .advantages-list {
     display: flex;
-    width: 1344px;
     height: 102px;
-    padding-top: 130px;
-    padding-bottom: 130px;
   }
 
   .advantages-list-item {
+    position: relative;
     display: flex;
     align-items: center;
   }
 
   .advantages-list-item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 348px;
   }
 
   .advantages-content {
+    position: absolute;
+    left: 82px;
+    width: 366px;
+    height: 66px;
     font-size: 20px;
     line-height: 1.649;
   }
@@ -248,9 +250,8 @@ button {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 800;
   letter-spacing: 0.08em;
   color: #111518;
 }
@@ -381,6 +382,8 @@ button {
     height: 40px;
     margin-right: 24px;
     margin-left: 24px;
+    background-image: url(/symbols.adb175c9.svg#vertical-line);
+    background-size: contain;
   }
 }
 @media screen and (min-width: 1340px) {
@@ -601,6 +604,7 @@ button {
   line-height: 1.214;
   text-decoration: none;
   text-transform: uppercase;
+  transition: color 250ms linear;
 }
 .nav-list-link.nav-list-link:hover, .nav-list-link.nav-list-link:focus {
   color: #ff6b09;
@@ -1084,9 +1088,6 @@ button {
 }
 .section-problems ul {
   list-style-type: none;
-}
-.section-problems .container {
-  padding: 0;
 }
 .section-problems .subsection {
   bottom: -148px;
@@ -1617,7 +1618,6 @@ button {
 }
 
 .section-registration {
-  margin-top: 300px;
   padding-top: 50px;
   padding-bottom: 50px;
   background-repeat: no-repeat;
@@ -1780,24 +1780,273 @@ button {
 }
 .registration-form-btn {
   margin: 0 auto;
-  padding-left: 26px;
-  padding-right: 26px;
+}
+@media screen and (min-width: 1340px) {
+  .registration-form-btn {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
 }
 
+.section-reviews {
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 1340px) {
+  .section-reviews {
+    padding-bottom: 130px;
+  }
+}
+
+.reviews {
+  margin: 0 auto;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+.reviews-title {
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  color: #111518;
+  text-align: center;
+}
+
+.reviews-text-list-item-name {
+  font-weight: 800;
+  line-height: 1.23;
+  letter-spacing: 0.08em;
+  color: #ff6b09;
+}
+.reviews-text-list-item-eduacation {
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: #B9B9B9;
+}
+.reviews-text-list-item-feedback {
+  font-weight: 500;
+  line-height: 1.66;
+  color: #3d3d3d;
+}
+
+.read-more {
+  font-weight: 500;
+  line-height: 1.56;
+  text-decoration-line: underline;
+  color: #ff6b09;
+}
+
+@media screen and (min-width: 320px) {
+  .reviews-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .reviews-text-list-item-name {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .reviews-text-list-item-eduacation {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .reviews-text-list-item-feedback {
+    font-size: 12px;
+    padding-bottom: 30px;
+  }
+  .reviews-text-list .read-more {
+    font-size: 12px;
+  }
+
+  .reviews-img {
+    width: 90px;
+    height: 90px;
+    padding-top: 20px;
+  }
+  .reviews-img, .reviews-vk {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .reviews-slider-img-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+  }
+  .reviews-slider-img-list-item {
+    margin-right: 10px;
+  }
+  .reviews-slider-img-list-item:nth-child(3) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .not-shown {
+    display: none;
+  }
+
+  .reviews {
+    align-items: center;
+    width: 240px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .reviews-text-list {
+    text-align: center;
+  }
+
+  .arrov-mob-left::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url("/arrowleft.82585b20.svg");
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 18px;
+    top: 20px;
+    left: 0;
+  }
+
+  .arrov-mob-right::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url("/arrowright.ac3135b4.svg");
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 18px;
+    top: 20px;
+    right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .reviews {
+    display: flex;
+  }
+  .reviews-img {
+    width: 150px;
+    height: 150px;
+  }
+  .reviews-title {
+    font-size: 26px;
+    margin-bottom: 70px;
+  }
+  .reviews-text-part {
+    display: flex;
+    width: 412px;
+    text-align: left;
+  }
+  .reviews-text-list-item-name {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .reviews-text-list-item-eduacation {
+    margin-bottom: 20px;
+  }
+
+  .reviews-img-part {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 46px;
+  }
+
+  .reviews-slider-img-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .reviews-img-part {
+    position: relative;
+  }
+
+  .reviews-img-list::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url("/arrowleft.82585b20.svg");
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 18px;
+    top: 110px;
+    left: -50px;
+  }
+
+  .reviews-text-part {
+    position: relative;
+  }
+
+  .reviews-text-list::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url("/arrowright.ac3135b4.svg");
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 18px;
+    top: 110px;
+    right: -50px;
+  }
+}
+@media screen and (min-width: 1340px) {
+  .reviews {
+    width: 1090px;
+    margin-top: 50px;
+  }
+  .reviews-title {
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
+  .reviews-text-part {
+    width: 706px;
+    margin-top: 50px;
+  }
+  .reviews-text-list-item-name {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .reviews-text-list-item-eduacation {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .reviews-text-list-item-feedback {
+    font-size: 18px;
+  }
+  .reviews .read-more {
+    font-size: 18px;
+  }
+
+  .reviews-img-list::after {
+    top: 130px;
+    left: -170px;
+  }
+
+  .reviews-text-list::before {
+    top: 130px;
+    right: -170px;
+  }
+
+  .reviews-img-part {
+    margin-top: 50px;
+    margin-left: 82px;
+    margin-right: 40px;
+  }
+
+  .reviews-slider-img-list {
+    margin-top: 40px;
+  }
+}
 .section-teacher {
-  height: 1358px;
+  height: 1300px;
   padding-top: 270px;
 }
 @media screen and (min-width: 768px) {
   .section-teacher {
-    height: 930px;
-    padding-top: 302px;
+    height: 878px;
+    padding-top: 300px;
   }
 }
 @media screen and (min-width: 1340px) {
   .section-teacher {
-    height: 1233px;
-    padding-top: 329px;
+    height: 1103px;
+    padding-top: 327px;
   }
 }
 .section-teacher-title {
@@ -1854,19 +2103,16 @@ button {
 }
 .section-teacher-achievement {
   padding-top: 20px;
-  padding-bottom: 43px;
   list-style: none;
 }
 @media screen and (min-width: 768px) {
   .section-teacher-achievement {
     padding-top: 20px;
-    padding-bottom: 38px;
   }
 }
 @media screen and (min-width: 1340px) {
   .section-teacher-achievement {
     padding-top: 30px;
-    padding-bottom: 63px;
   }
 }
 .section-teacher-achievement-list {
@@ -1874,9 +2120,11 @@ button {
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: 0.06em;
-  padding-bottom: 20px;
   position: relative;
   left: 25px;
+}
+.section-teacher-achievement-list:not(:last-child) {
+  padding-bottom: 20px;
 }
 @media screen and (min-width: 1340px) {
   .section-teacher-achievement-list {
@@ -1902,7 +2150,7 @@ button {
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
-    padding-bottom: 15px;
+    padding-bottom: 21px;
   }
 }
 .section-teacher-achievement-link {
@@ -1923,10 +2171,12 @@ button {
 }
 .section-teacher-about-container {
   height: 668px;
+  padding-top: 20px;
 }
 @media screen and (min-width: 768px) {
   .section-teacher-about-container {
     height: 516px;
+    padding-top: 0px;
   }
 }
 @media screen and (min-width: 1340px) {
@@ -1949,6 +2199,23 @@ button {
   position: absolute;
   display: flex;
 }
+.section-teacher-about-line {
+  color: #ff6b09;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 164.9%;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .section-teacher-about-line {
+    padding-bottom: 5px;
+  }
+}
+@media screen and (min-width: 1340px) {
+  .section-teacher-about-line {
+    padding-bottom: 30px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .section-teacher-flex {
@@ -1962,8 +2229,13 @@ button {
 }
 
 .section-teacher-border {
-  height: 52px;
+  height: 34px;
   border-bottom: 1px solid #B9B9B9;
+}
+@media screen and (min-width: 1340px) {
+  .section-teacher-border {
+    height: 52px;
+  }
 }
 
 .backdrop {
