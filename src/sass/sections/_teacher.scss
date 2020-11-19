@@ -1,13 +1,10 @@
 .section-teacher {
-  height: 1300px;
   padding-top: 270px;
 
   @media screen and (min-width: $breakpoint-tablet) {
-    height: 878px;
     padding-top: 300px;
   }
   @media screen and (min-width: $breakpoint-desktop) {
-    height: 1103px;
     padding-top: 327px;
   }
   &-title {
@@ -118,15 +115,12 @@
     }
   }
   &-about-container {
-    height: 668px;
     padding-top: 20px;
 
     @media screen and (min-width: $breakpoint-tablet) {
-      height: 516px;
       padding-top: 0px;
     }
     @media screen and (min-width: $breakpoint-desktop) {
-      height: 642px;
       width: 660px;
     }
   }
