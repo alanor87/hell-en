@@ -21,6 +21,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -1397,6 +1401,9 @@ button {
   .semester-program {
     flex-direction: column;
   }
+  .semester-program > li:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .semester-topic-list {
@@ -1729,6 +1736,8 @@ button {
 }
 .registration-form-btn {
   margin: 0 auto;
+  padding-left: 9px;
+  padding-right: 9px;
 }
 @media screen and (min-width: 1360px) {
   .registration-form-btn {
@@ -1804,14 +1813,17 @@ button {
   font-size: 12px;
 }
 
-.reviews-img {
+.reviews-img-photo {
   width: 90px;
   height: 90px;
 }
-.reviews-img, .reviews-vk {
+.reviews-img-photo, .reviews-img-vk {
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+.reviews-img-part {
+  text-align: center;
 }
 .reviews-slider-img-list {
   margin-top: 20px;
@@ -1869,14 +1881,16 @@ button {
 @media screen and (min-width: 768px) {
   .reviews {
     display: flex;
+    padding-top: 40px;
+    position: relative;
   }
-  .reviews-img {
+  .reviews-img-photo {
     width: 150px;
     height: 150px;
   }
   .reviews-title {
     font-size: 26px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
   }
   .reviews-text-part {
     display: flex;
@@ -1893,19 +1907,13 @@ button {
 
   .reviews-img-part {
     display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    align-items: center;
     margin-left: 40px;
     margin-right: 46px;
   }
-
-  .reviews-slider-img-list-item:not(:last-child) {
-    margin-right: 30px;
-  }
-
-  .reviews-img-part {
-    position: relative;
-  }
-
-  .reviews-img-list::after {
+  .reviews-img-part::after {
     position: absolute;
     content: "";
     display: block;
@@ -1914,14 +1922,18 @@ button {
     width: 28px;
     height: 18px;
     top: 110px;
-    left: -50px;
+    left: -14px;
   }
 
-  .reviews-text-part {
-    position: relative;
+  .reviews-img-photo {
+    padding: 0;
   }
 
-  .reviews-text-list::before {
+  .reviews-slider-img-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .reviews-text-part::before {
     position: absolute;
     content: "";
     display: block;
@@ -1930,13 +1942,13 @@ button {
     width: 28px;
     height: 18px;
     top: 110px;
-    right: -50px;
+    right: -14px;
   }
 }
 @media screen and (min-width: 1360px) {
   .reviews {
     width: 1090px;
-    margin-top: 50px;
+    padding-top: 50px;
   }
   .reviews-title {
     font-size: 46px;
@@ -1944,7 +1956,6 @@ button {
   }
   .reviews-text-part {
     width: 706px;
-    margin-top: 50px;
   }
   .reviews-text-list-item-name {
     font-size: 30px;
@@ -1961,14 +1972,14 @@ button {
     font-size: 18px;
   }
 
-  .reviews-img-list::after {
+  .reviews-img-part::after {
     top: 130px;
-    left: -170px;
+    left: -83px;
   }
 
-  .reviews-text-list::before {
+  .reviews-text-part::before {
     top: 130px;
-    right: -170px;
+    right: -83px;
   }
 
   .reviews-img-part {
@@ -1982,18 +1993,15 @@ button {
   }
 }
 .section-teacher {
-  height: 1300px;
   padding-top: 270px;
 }
 @media screen and (min-width: 768px) {
   .section-teacher {
-    height: 878px;
     padding-top: 300px;
   }
 }
 @media screen and (min-width: 1360px) {
   .section-teacher {
-    height: 1103px;
     padding-top: 327px;
   }
 }
@@ -2119,18 +2127,15 @@ button {
   }
 }
 .section-teacher-about-container {
-  height: 668px;
   padding-top: 20px;
 }
 @media screen and (min-width: 768px) {
   .section-teacher-about-container {
-    height: 516px;
     padding-top: 0px;
   }
 }
 @media screen and (min-width: 1360px) {
   .section-teacher-about-container {
-    height: 642px;
     width: 660px;
   }
 }
