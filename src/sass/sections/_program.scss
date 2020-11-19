@@ -159,6 +159,9 @@
   }
   @media screen and (min-width: $breakpoint-desktop) {
     flex-direction: column;
+    & > li:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 .semester-topic-list {
@@ -167,8 +170,8 @@
   @media screen and (min-width: $breakpoint-tablet) {
     width: 150px;
     margin-bottom: 0px;
-    &:not(:last-child){
-    margin-right: 50px;
+    &:not(:last-child) {
+      margin-right: 50px;
     }
   }
   @media screen and (min-width: $breakpoint-desktop) {
