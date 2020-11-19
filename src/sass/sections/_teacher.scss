@@ -134,7 +134,13 @@
   }
   &-svg {
     position: absolute;
-    display: flex;
+    }
+  &-svg > svg {
+    width: 17px;
+    height: 14px;
+    @media screen and (min-width: $breakpoint-desktop) {
+    width: 24px;
+    height: 20px;}
   }
   &-about-line {
     color: $accent-color;

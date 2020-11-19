@@ -23,6 +23,10 @@
 
   & .section-title {
     text-align: center;
+    font-size: 26px;
+    @media screen and (min-width: $breakpoint-desktop) {
+      font-size: 46px;
+    }
   }
 }
 
