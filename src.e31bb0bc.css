@@ -8,12 +8,6 @@
 /* Font colors */
 /* Main font */
 /* Breakpoints */
-.is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-}
-
 *,
 *::before,
 *::after {
@@ -2226,6 +2220,8 @@ button {
   padding-top: 30px;
   background-color: rgba(17, 21, 24, 0.9);
   overflow-y: auto;
+  opacity: 1;
+  transition: opacity 250ms linear, visibility 0ms linear 0ms;
   z-index: 100;
 }
 @media screen and (min-width: 768px) {
@@ -2237,6 +2233,12 @@ button {
   .backdrop {
     display: none;
   }
+}
+.backdrop.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 250ms linear, visibility 0ms linear 250ms;
 }
 
 .backdrop .container {
