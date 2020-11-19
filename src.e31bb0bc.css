@@ -20,6 +20,7 @@ html {
 }
 
 body {
+  background-color: white;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   padding-top: 110px;
@@ -250,7 +251,7 @@ button {
 }
 @media screen and (min-width: 1360px) {
   .section-footer .container {
-    padding: 0 15px;
+    padding: 0;
   }
 }
 
@@ -288,6 +289,9 @@ button {
     width: 128px;
     height: 45px;
   }
+}
+.logo a {
+  display: block;
 }
 
 .contact-wrapper {
