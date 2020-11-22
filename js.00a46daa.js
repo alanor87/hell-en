@@ -117,21 +117,83 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"modal.js":[function(require,module,exports) {
-(function () {
-  var refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]")
-  };
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
   }
-})();
-},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+  return bundleURL;
+}
+
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./..\\images\\instagram.svg":[["instagram.244b4cdf.svg","images/instagram.svg"],"images/instagram.svg"],"./..\\images\\hero\\hero-layer1mobile.png":[["hero-layer1mobile.7097a272.png","images/hero/hero-layer1mobile.png"],"images/hero/hero-layer1mobile.png"],"./..\\images\\hero\\hero-layer1tablet.png":[["hero-layer1tablet.698c3381.png","images/hero/hero-layer1tablet.png"],"images/hero/hero-layer1tablet.png"],"./..\\images\\hero\\hero-layer1desktop.png":[["hero-layer1desktop.3d2fbded.png","images/hero/hero-layer1desktop.png"],"images/hero/hero-layer1desktop.png"],"./..\\images\\hero\\hero-layer1mobile@2x.png":[["hero-layer1mobile@2x.594a22ea.png","images/hero/hero-layer1mobile@2x.png"],"images/hero/hero-layer1mobile@2x.png"],"./..\\images\\hero\\hero-layer1tablet@2x.png":[["hero-layer1tablet@2x.ed88511b.png","images/hero/hero-layer1tablet@2x.png"],"images/hero/hero-layer1tablet@2x.png"],"./..\\images\\hero\\hero-layer1desktop@2x.png":[["hero-layer1desktop@2x.afb42960.png","images/hero/hero-layer1desktop@2x.png"],"images/hero/hero-layer1desktop@2x.png"],"./..\\images\\problems\\fire-desktop-min.png":[["fire-desktop-min.0f0de6e6.png","images/problems/fire-desktop-min.png"],"images/problems/fire-desktop-min.png"],"./..\\images\\problems\\fire@2x-desktop-min.png":[["fire@2x-desktop-min.72c8ef79.png","images/problems/fire@2x-desktop-min.png"],"images/problems/fire@2x-desktop-min.png"],"./..\\images\\program\\program-mobile-min.png":[["program-mobile-min.dcaec478.png","images/program/program-mobile-min.png"],"images/program/program-mobile-min.png"],"./..\\images\\program\\program@2x-mobile-min.png":[["program@2x-mobile-min.0b02b2e8.png","images/program/program@2x-mobile-min.png"],"images/program/program@2x-mobile-min.png"],"./..\\images\\program\\program-tablet-min.png":[["program-tablet-min.7463b3a5.png","images/program/program-tablet-min.png"],"images/program/program-tablet-min.png"],"./..\\images\\program\\program@2x-tablet-min.png":[["program@2x-tablet-min.f9f305ba.png","images/program/program@2x-tablet-min.png"],"images/program/program@2x-tablet-min.png"],"./..\\images\\program\\program-desktop-min.png":[["program-desktop-min.5f7bbd41.png","images/program/program-desktop-min.png"],"images/program/program-desktop-min.png"],"./..\\images\\program\\program@2x-desktop-min.png":[["program@2x-desktop-min.7b57faf5.png","images/program/program@2x-desktop-min.png"],"images/program/program@2x-desktop-min.png"],"./..\\images\\registration\\registration-mobile-min.png":[["registration-mobile-min.95743693.png","images/registration/registration-mobile-min.png"],"images/registration/registration-mobile-min.png"],"./..\\images\\registration\\registration@2x-mobile-min.png":[["registration@2x-mobile-min.e83b53e7.png","images/registration/registration@2x-mobile-min.png"],"images/registration/registration@2x-mobile-min.png"],"./..\\images\\registration\\registration-tablet-min.png":[["registration-tablet-min.1c2eb733.png","images/registration/registration-tablet-min.png"],"images/registration/registration-tablet-min.png"],"./..\\images\\registration\\registration-desktop-min.png":[["registration-desktop-min.3ca0691d.png","images/registration/registration-desktop-min.png"],"images/registration/registration-desktop-min.png"],"./..\\images\\registration\\registration@2x-desktop-min.png":[["registration@2x-desktop-min.2e1e73e3.png","images/registration/registration@2x-desktop-min.png"],"images/registration/registration@2x-desktop-min.png"],"./..\\images\\slider\\arrowleft.svg":[["arrowleft.82585b20.svg","images/slider/arrowleft.svg"],"images/slider/arrowleft.svg"],"./..\\images\\slider\\arrowright.svg":[["arrowright.ac3135b4.svg","images/slider/arrowright.svg"],"images/slider/arrowright.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
+"use strict";
+
+require("../sass/main.scss");
+},{"../sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -159,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59441" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59779" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -335,5 +397,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","modal.js"], null)
-//# sourceMappingURL=/modal.130e4d6b.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/index.js"], null)
+//# sourceMappingURL=/js.00a46daa.js.map

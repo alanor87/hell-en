@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"modal.js":[function(require,module,exports) {
+})({"js/modal.js":[function(require,module,exports) {
 (function () {
   var refs = {
     openModalBtn: document.querySelector("[data-modal-open]"),
@@ -159,7 +159,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59441" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59779" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -335,5 +335,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","modal.js"], null)
-//# sourceMappingURL=/modal.130e4d6b.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/modal.js"], null)
+//# sourceMappingURL=/modal.4331011c.js.map
