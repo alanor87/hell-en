@@ -4,8 +4,14 @@
     padding-bottom: 130px;
   }
 }
+.section-reviews *:focus {
+  outline: none;
+}
 .section-reviews .container {
   position: relative;
+}
+.section-reviews .section-title {
+  text-align: center;
 }
 .reviews {
   margin-left: auto;
@@ -28,10 +34,12 @@
   margin-bottom: 20px;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   @media screen and (min-width: $breakpoint-tablet) {
-    width: auto;
+    width: 668px;
     display: flex;
     padding: 40px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: $breakpoint-desktop) {
     width: 1090px;
@@ -135,11 +143,11 @@
   height: 28px;
   z-index: 10;
   @media screen and (min-width: $breakpoint-tablet) {
-    top: 173px;
-    left: -14px;
+    top: 157px;
+    left: -10px;
   }
   @media screen and (min-width: $breakpoint-desktop) {
-    top: 240px;
+    top: 157px;
     left: 30px;
   }
 }
@@ -154,11 +162,11 @@
   height: 28px;
   z-index: 10;
   @media screen and (min-width: $breakpoint-tablet) {
-    top: 173px;
-    right: -14px;
+    top: 157px;
+    right: -10px;
   }
   @media screen and (min-width: $breakpoint-desktop) {
-    top: 240px;
+    top: 157px;
     right: 30px;
   }
 }
