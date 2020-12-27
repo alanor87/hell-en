@@ -139,13 +139,14 @@ $('.reviews').slick({
 });
 $('.reviews-thumbs').slick({
   autoplay: false,
-  infinite: false,
+  infinite: true,
   mobileFirst: true,
   slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
   asNavFor: '.reviews',
   dots: false,
-  centerMode: false,
+  centerMode: true,
+  centerPadding: 30,
   focusOnSelect: true,
   prevArrow: '<span class="arrow-left"></span>',
   nextArrow: '<span class="arrow-right"></span>',
@@ -186,7 +187,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55544" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56768" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
