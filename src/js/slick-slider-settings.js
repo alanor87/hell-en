@@ -21,13 +21,14 @@ $('.reviews').slick({
 });
 $('.reviews-thumbs').slick({
     autoplay: false,
-    infinite: false,
+    infinite: true,
     mobileFirst: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     asNavFor: '.reviews',
     dots: false,
-    centerMode: false,
+    centerMode: true,
+    centerPadding: 30,
     focusOnSelect: true,
     prevArrow: '<span class="arrow-left"></span>',
     nextArrow: '<span class="arrow-right"></span>',
