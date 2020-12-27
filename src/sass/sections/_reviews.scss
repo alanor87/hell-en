@@ -60,6 +60,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 27px;
+  border-radius: 50%;
   @media screen and (min-width: $breakpoint-tablet) {
     width: 150px;
     height: 150px;
@@ -129,6 +130,12 @@
   justify-content: center;
   @media screen and (min-width: $breakpoint-tablet) {
     width: 558px;
+  }
+
+  & img {
+    width: 54px;
+    height: auto;
+    border-radius: 50%;
   }
 }
 
