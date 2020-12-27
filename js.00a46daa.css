@@ -1835,6 +1835,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 27px;
+  border-radius: 50%;
 }
 @media screen and (min-width: 768px) {
   .reviews-photo {
@@ -1920,6 +1921,11 @@ button {
   .reviews-thumbs {
     width: 558px;
   }
+}
+.reviews-thumbs img {
+  width: 54px;
+  height: auto;
+  border-radius: 50%;
 }
 
 .arrow-left {
